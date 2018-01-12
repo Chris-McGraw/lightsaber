@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;  
+  cursor: default;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;  
+  transform: translate(-50%, -50%);
+}
+
+#blade {
+  position: relative;
+  top: 25px; 
+  margin: auto;
+  width: 19px;
+  height: 480px;
+  background-color: #F0FEF0;
+  border-radius: 90px 90px 0 0;
+  box-shadow: 0px -6px 6px 8px rgba(182,252,182, 0.9);
+  cursor: pointer;
+}
+
+.blade-tip {
+  position: absolute;
+  top: -5px;
+  margin: auto;
+  width: 19px;
+  height: 12px;
+  border-radius: 90px 90px 0 0;
+  background-color: #F0FEF0; 
+  cursor: pointer;
+}
+
+.saber {
+  cursor: pointer;
+}
+
+#lens {
+  position: relative;
+  top: 33px; 
+  margin: auto;
+  width: 27px;
+  height: 7.5px;
+  background-color: lightGray; 
+}
+
+.lens-accent-top {
+  position: relative;  
+  top: -7px; 
+  right: 3px;
+  width: 33px;
+  height: 1.5px;  
+  background-color: lightGray;
+}
+
+.lens-accent {
+  position: relative;
+  top: -6px;
+  right: 2px;
+  width: 31px;
+  height: 3.75px;  
+  background-color: lightGray;  
+}
+
+#emitter {
+  position: relative;
+  top: 44px;
+  margin: auto;
+  width: 27px;
+  height: 6px;  
+  background-color: #C9AE5D;  
+}
+
+.emitter-accent {
+  position: relative;
+  top: -10px;
+  width: 10.5px;
+  height: 9px;  
+  margin: auto;
+  background-color: #C9AE5D;  
+}
+
+#main-hilt-top {
+  position: relative;
+  top: 55px;  
+  margin: auto;
+  width: 27px;
+  height: 45px;  
+  background-color: lightGray;
+}
+
+.hilt-accent-top {
+  position: relative;
+  top: -10px;
+  width: 10.5px;
+  height: 9px;  
+  margin: auto;
+  background-color: #666666;
+}
+
+.hilt-accent-1 {
+  position: relative;
+  top: -9px;
+  margin: auto;
+  width: 27px;  
+  height: 3px;  
+  background-color: #666666;
+}
+
+.hilt-accent-2 {
+  position: relative;
+  top: -9px;
+  margin: auto;
+  width: 27px;  
+  height: 3px;  
+  margin-top: 3px;
+  background-color: #666666;
+}
+
+#control-panel {
+  position: relative;
+  top: 10px;
+  right: 18px;
+  margin: auto;
+  width: 7px;
+  height: 30px;  
+  background-color: lightGray;
+}
+
+#control-panel-accent {
+  position: relative;
+  top: -20px;
+  right: 24px; 
+  margin: auto;
+  width: 3px;
+  height: 30px;  
+  background-color: #C9AE5D;
+}
+
+#main-hilt-bottom {
+  position: relative;
+  top: -5px; 
+  margin: auto;
+  width: 27px;
+  height: 75px;  
+  background-color: lightGray;
+}
+
+#power-cell {
+  position: relative;
+  top: -4px; 
+  margin: auto;
+  width: 23px;
+  height: 12px;  
+  background-color: lightGray;  
+}
+
+.cell-stub-left {
+  display: inline-block;
+  position: relative;
+  top: -4px; 
+  right: 4px; 
+  width: 4px;
+  height: 7px;  
+  background-color: darkGray;   
+}
+
+.cell-stub-mid {
+  display: inline-block; 
+  position: relative;
+  top: -4px; 
+  margin: auto;
+  width: 7px;
+  height: 7px;  
+  background-color: darkGray;   
+}
+
+.cell-stub-right {
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  left: 4px;
+  width: 4px;
+  height: 7px;   
+  background-color: darkGray;
+}
+
+#mute-button {
+  position: absolute;
+  top: 638px;
+  left: 92%;
+  width: 45px;  
+  color: darkGray;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #mute-button {
+    left: 85%;
+  }
+}
