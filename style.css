@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   cursor: default;
 }
 
@@ -19,13 +19,13 @@ video {
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto;  
+  height: auto;
   transform: translate(-50%, -50%);
 }
 
 #blade {
   position: relative;
-  top: 25px; 
+  top: 25px;
   margin: auto;
   width: 19px;
   height: 480px;
@@ -42,7 +42,7 @@ video {
   width: 19px;
   height: 12px;
   border-radius: 90px 90px 0 0;
-  background-color: #F0FEF0; 
+  background-color: #F0FEF0;
   cursor: pointer;
 }
 
@@ -52,19 +52,19 @@ video {
 
 #lens {
   position: relative;
-  top: 33px; 
+  top: 33px;
   margin: auto;
   width: 27px;
   height: 7.5px;
-  background-color: lightGray; 
+  background-color: lightGray;
 }
 
 .lens-accent-top {
-  position: relative;  
-  top: -7px; 
+  position: relative;
+  top: -7px;
   right: 3px;
   width: 33px;
-  height: 1.5px;  
+  height: 1.5px;
   background-color: lightGray;
 }
 
@@ -73,8 +73,8 @@ video {
   top: -6px;
   right: 2px;
   width: 31px;
-  height: 3.75px;  
-  background-color: lightGray;  
+  height: 3.75px;
+  background-color: lightGray;
 }
 
 #emitter {
@@ -82,25 +82,25 @@ video {
   top: 44px;
   margin: auto;
   width: 27px;
-  height: 6px;  
-  background-color: #C9AE5D;  
+  height: 6px;
+  background-color: #C9AE5D;
 }
 
 .emitter-accent {
   position: relative;
   top: -10px;
   width: 10.5px;
-  height: 9px;  
+  height: 9px;
   margin: auto;
-  background-color: #C9AE5D;  
+  background-color: #C9AE5D;
 }
 
 #main-hilt-top {
   position: relative;
-  top: 55px;  
+  top: 55px;
   margin: auto;
   width: 27px;
-  height: 45px;  
+  height: 45px;
   background-color: lightGray;
 }
 
@@ -108,7 +108,7 @@ video {
   position: relative;
   top: -10px;
   width: 10.5px;
-  height: 9px;  
+  height: 9px;
   margin: auto;
   background-color: #666666;
 }
@@ -117,8 +117,8 @@ video {
   position: relative;
   top: -9px;
   margin: auto;
-  width: 27px;  
-  height: 3px;  
+  width: 27px;
+  height: 3px;
   background-color: #666666;
 }
 
@@ -126,8 +126,8 @@ video {
   position: relative;
   top: -9px;
   margin: auto;
-  width: 27px;  
-  height: 3px;  
+  width: 27px;
+  height: 3px;
   margin-top: 3px;
   background-color: #666666;
 }
@@ -138,56 +138,56 @@ video {
   right: 18px;
   margin: auto;
   width: 7px;
-  height: 30px;  
+  height: 30px;
   background-color: lightGray;
 }
 
 #control-panel-accent {
   position: relative;
   top: -20px;
-  right: 24px; 
+  right: 24px;
   margin: auto;
   width: 3px;
-  height: 30px;  
+  height: 30px;
   background-color: #C9AE5D;
 }
 
 #main-hilt-bottom {
   position: relative;
-  top: -5px; 
+  top: -5px;
   margin: auto;
   width: 27px;
-  height: 75px;  
+  height: 75px;
   background-color: lightGray;
 }
 
 #power-cell {
   position: relative;
-  top: -4px; 
+  top: -4px;
   margin: auto;
   width: 23px;
-  height: 12px;  
-  background-color: lightGray;  
+  height: 12px;
+  background-color: lightGray;
 }
 
 .cell-stub-left {
   display: inline-block;
   position: relative;
-  top: -4px; 
-  right: 4px; 
+  top: -4px;
+  right: 4px;
   width: 4px;
-  height: 7px;  
-  background-color: darkGray;   
+  height: 7px;
+  background-color: darkGray;
 }
 
 .cell-stub-mid {
-  display: inline-block; 
+  display: inline-block;
   position: relative;
-  top: -4px; 
+  top: -4px;
   margin: auto;
   width: 7px;
-  height: 7px;  
-  background-color: darkGray;   
+  height: 7px;
+  background-color: darkGray;
 }
 
 .cell-stub-right {
@@ -196,7 +196,7 @@ video {
   top: -4px;
   left: 4px;
   width: 4px;
-  height: 7px;   
+  height: 7px;
   background-color: darkGray;
 }
 
@@ -204,10 +204,35 @@ video {
   position: absolute;
   top: 638px;
   left: 92%;
-  width: 45px;  
+  width: 45px;
   color: darkGray;
   cursor: pointer;
 }
+
+#attribution {
+  position: absolute;
+  top: 652px;
+  margin-left: 0%;
+  width: 35%;
+  text-align: center;
+}
+
+#video-src {
+}
+
+span {
+  color: darkGray;
+}
+
+#audio-src {
+}
+
+a {
+  color: darkGray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 800px) {
   #mute-button {
