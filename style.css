@@ -344,7 +344,10 @@ a {
     margin-left: 0%;
     width: 42.5%;
 
-    /* border: 2px solid lightGreen; */
+    width: 37.5%;
+    font-size: 14px;
+
+    border: 2px solid lightGreen;
   }
 }
 
@@ -357,6 +360,6 @@ a {
     margin-left: 0%;
     width: 45%;
 
-    /* border: 2px solid red; */
+    border: 2px solid red;
   }
 }
