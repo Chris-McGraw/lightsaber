@@ -328,10 +328,10 @@ a {
   }
 
   #attribution {
-    margin-left: 5%;
+    margin-left: 3%;
     width: 35%;
-    
-    border: 2px solid yellow;
+
+    /* border: 2px solid yellow; */
   }
 }
 
@@ -341,10 +341,10 @@ a {
   }
 
   #attribution {
-    margin-left: 3%;
-    width: 40%;
+    margin-left: 0%;
+    width: 42.5%;
 
-    border: 2px solid lightGreen;
+    /* border: 2px solid lightGreen; */
   }
 }
 
@@ -354,9 +354,9 @@ a {
   }
 
   #attribution {
-    margin-left: 1%;
+    margin-left: 0%;
     width: 45%;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 }
