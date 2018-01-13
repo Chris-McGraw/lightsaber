@@ -204,6 +204,9 @@ video {
   position: absolute;
   top: 638px;
   left: 92%;
+
+  left: 94%;
+
   width: 45px;
   color: darkGray;
   cursor: pointer;
@@ -234,8 +237,126 @@ a {
 }
 
 
+@media screen and (max-width: 1200px) {
+  #mute-button {
+    left: 94%;
+  }
+
+  #attribution {
+    margin-left: -2%;
+    width: 35%;
+
+    /* border: 2px solid red; */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #mute-button {
+    left: 94%;
+  }
+
+  #attribution {
+    margin-left: -4%;
+    width: 42%;
+
+    /* border: 2px solid white; */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #mute-button {
+    left: 93%;
+  }
+
+  #attribution {
+    margin-left: -2%;
+    width: 42%;
+
+    /* border: 2px solid yellow; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #mute-button {
+    left: 93%;
+  }
+
+  #attribution {
+    margin-left: 0%;
+    width: 42%;
+
+    /* border: 2px solid white; */
+  }
+}
+
 @media screen and (max-width: 800px) {
   #mute-button {
-    left: 85%;
+    left: 90%;
+  }
+
+  #attribution {
+    top: 644px;
+
+    margin-left: 8%;
+    width: 25%;
+    text-align: center;
+
+    /* border: 2px solid blue; */
+  }
+
+  span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #mute-button {
+    left: 89%;
+  }
+
+  #attribution {
+    margin-left: 7%;
+    width: 30%;
+
+    /* border: 2px solid pink; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mute-button {
+    left: 88%;
+  }
+
+  #attribution {
+    margin-left: 5%;
+    width: 35%;
+    
+    border: 2px solid yellow;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mute-button {
+    left: 87%;
+  }
+
+  #attribution {
+    margin-left: 3%;
+    width: 40%;
+
+    border: 2px solid lightGreen;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #mute-button {
+    left: 86%;
+  }
+
+  #attribution {
+    margin-left: 1%;
+    width: 45%;
+
+    border: 2px solid red;
   }
 }
