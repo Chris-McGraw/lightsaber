@@ -210,26 +210,25 @@ video {
 }
 
 #attribution {
-  position: relative;
-  top: -45px;
-  margin-left: 65%;
-  width: 15%;
-
-  /* height: 40px; */
-
+  position: absolute;
+  top: 652px;
+  margin-left: 0%;
+  width: 35%;
   text-align: center;
 }
 
 #video-src {
 }
 
+span {
+  color: darkGray;
+}
+
 #audio-src {
-  position: relative;
-  top: 3px;
 }
 
 a {
-  color: lightGray;
+  color: darkGray;
   text-decoration: none;
   cursor: pointer;
 }
