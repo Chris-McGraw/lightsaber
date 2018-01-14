@@ -23,9 +23,30 @@ video {
   transform: translate(-50%, -50%);
 }
 
+#blade-flash {
+  position: relative;
+  top: 10px;
+  margin: auto;
+
+  width: 100px;
+  width: 40px;
+
+  height: 500px;
+
+  border-radius: 50%;
+  border-radius: 20%;
+
+  opacity: 0.7;
+
+  background-color: #F0FEF0;
+}
+
 #blade {
   position: relative;
   top: 25px;
+
+  top: -475px;
+
   margin: auto;
   width: 19px;
   height: 480px;
