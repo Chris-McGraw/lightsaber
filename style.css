@@ -23,6 +23,18 @@ video {
   transform: translate(-50%, -50%);
 }
 
+#blade-flash {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -21px;
+  width: 40px;
+  height: 497px;
+  border-radius: 90px 90px 0 0;
+  opacity: 0.8;
+  background-color: #F0FEF0;
+}
+
 #blade {
   position: relative;
   top: 25px;
@@ -203,10 +215,7 @@ video {
 #mute-button {
   position: absolute;
   top: 638px;
-  left: 92%;
-
   left: 94%;
-
   width: 45px;
   color: darkGray;
   cursor: pointer;
