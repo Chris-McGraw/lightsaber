@@ -24,11 +24,12 @@ video {
 }
 
 #blade-flash {
-  position: relative;
+  position: absolute;
   top: 8px;
-  margin: auto;
+  left: 50%;
+  margin-left: -21px;
   width: 40px;
-  height: 500px;
+  height: 497px;
   border-radius: 90px 90px 0 0;
   opacity: 0.8;
   background-color: #F0FEF0;
@@ -37,9 +38,6 @@ video {
 #blade {
   position: relative;
   top: 25px;
-
-  top: -475px;
-
   margin: auto;
   width: 19px;
   height: 480px;
@@ -67,9 +65,6 @@ video {
 #lens {
   position: relative;
   top: 33px;
-
-  top: -467px;
-
   margin: auto;
   width: 27px;
   height: 7.5px;
@@ -97,9 +92,6 @@ video {
 #emitter {
   position: relative;
   top: 44px;
-
-  top: -456px;
-
   margin: auto;
   width: 27px;
   height: 6px;
@@ -118,9 +110,6 @@ video {
 #main-hilt-top {
   position: relative;
   top: 55px;
-
-  top: -445px;
-
   margin: auto;
   width: 27px;
   height: 45px;
@@ -158,9 +147,6 @@ video {
 #control-panel {
   position: relative;
   top: 10px;
-
-  top: -490px;
-
   right: 18px;
   margin: auto;
   width: 7px;
@@ -171,9 +157,6 @@ video {
 #control-panel-accent {
   position: relative;
   top: -20px;
-
-  top: -520px;
-
   right: 24px;
   margin: auto;
   width: 3px;
@@ -184,9 +167,6 @@ video {
 #main-hilt-bottom {
   position: relative;
   top: -5px;
-
-  top: -505px;
-
   margin: auto;
   width: 27px;
   height: 75px;
@@ -196,9 +176,6 @@ video {
 #power-cell {
   position: relative;
   top: -4px;
-
-  top: -504px;
-
   margin: auto;
   width: 23px;
   height: 12px;
@@ -238,10 +215,7 @@ video {
 #mute-button {
   position: absolute;
   top: 638px;
-  left: 92%;
-
   left: 94%;
-
   width: 45px;
   color: darkGray;
   cursor: pointer;

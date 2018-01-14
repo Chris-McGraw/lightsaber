@@ -95,7 +95,6 @@ $(document).ready(function(){
 
   function bladeHitFlash() {
     $("#blade-flash").toggleClass("hidden");
-
     setTimeout(function() {
       $("#blade-flash").toggleClass("hidden")}, 50);
   }
