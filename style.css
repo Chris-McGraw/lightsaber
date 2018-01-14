@@ -236,7 +236,7 @@ a {
   cursor: pointer;
 }
 
-
+/*----- Media Queries -----*/
 @media screen and (max-width: 1200px) {
   #mute-button {
     left: 94%;
@@ -245,8 +245,6 @@ a {
   #attribution {
     margin-left: -2%;
     width: 35%;
-
-    /* border: 2px solid red; */
   }
 }
 
@@ -258,8 +256,6 @@ a {
   #attribution {
     margin-left: -4%;
     width: 42%;
-
-    /* border: 2px solid white; */
   }
 }
 
@@ -271,8 +267,6 @@ a {
   #attribution {
     margin-left: -2%;
     width: 42%;
-
-    /* border: 2px solid yellow; */
   }
 }
 
@@ -284,8 +278,6 @@ a {
   #attribution {
     margin-left: 0%;
     width: 42%;
-
-    /* border: 2px solid white; */
   }
 }
 
@@ -296,12 +288,9 @@ a {
 
   #attribution {
     top: 644px;
-
     margin-left: 8%;
     width: 25%;
     text-align: center;
-
-    /* border: 2px solid blue; */
   }
 
   span {
@@ -317,8 +306,6 @@ a {
   #attribution {
     margin-left: 7%;
     width: 30%;
-
-    /* border: 2px solid pink; */
   }
 }
 
@@ -330,8 +317,6 @@ a {
   #attribution {
     margin-left: 3%;
     width: 35%;
-
-    /* border: 2px solid yellow; */
   }
 }
 
@@ -342,9 +327,8 @@ a {
 
   #attribution {
     margin-left: 0%;
-    width: 42.5%;
-
-    /* border: 2px solid lightGreen; */
+    width: 37.25%;
+    font-size: 14px;
   }
 }
 
@@ -354,9 +338,7 @@ a {
   }
 
   #attribution {
-    margin-left: 0%;
+    margin-left: -1%;
     width: 45%;
-
-    /* border: 2px solid red; */
   }
 }
