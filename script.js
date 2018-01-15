@@ -72,13 +72,19 @@ $(document).ready(function(){
     if(saberStatus === false) {
       playOn();
       playIdle();
-      $("#blade").toggleClass("hidden");
+      $("#blade").toggleClass("extend");
+
+      $(".blade-tip").toggleClass("hidden");
+
       saberStatus = true;
     }
     else if (saberStatus === true) {
       playOff();
       stopIdle();
-      $("#blade").toggleClass("hidden");
+      $("#blade").toggleClass("extend");
+
+      $(".blade-tip").toggleClass("hidden");
+
       saberStatus = false;
     }
   }
