@@ -26,13 +26,15 @@ video {
 #blade-flash {
   position: absolute;
   top: 8px;
-  left: 50%;
-  margin-left: -21px;
-  width: 40px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 41px;
   height: 497px;
   border-radius: 90px 90px 0 0;
-  opacity: 0.8;
+  opacity: 0.7;
   background-color: #F0FEF0;
+  z-index: 1;
 }
 
 #blade {
@@ -243,6 +245,10 @@ a {
   color: darkGray;
   text-decoration: none;
   cursor: pointer;
+}
+
+a:hover {
+  color: lightGray;
 }
 
 /*----- Media Queries -----*/
