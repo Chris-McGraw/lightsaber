@@ -5,8 +5,6 @@
 }
 
 .hidden {
-  /* visibility: hidden; */
-
   display: none !important;
 }
 
@@ -28,6 +26,9 @@ video {
 #blade-flash {
   position: absolute;
   top: 8px;
+
+  top: 7px;
+
   right: 0;
   left: 0;
   margin: auto;
@@ -36,34 +37,34 @@ video {
   border-radius: 90px 90px 0 0;
   opacity: 0.7;
   background-color: #F0FEF0;
+  cursor: pointer;
   z-index: 1;
 }
 
 #blade {
   position: relative;
-
   top: 25px;
+
+  top: 24px;
 
   margin: auto;
   width: 19px;
-  height: 480px;
-
   height: 0px;
   margin-top: 480px;
-  transition-duration: 0.5s;
 
+  /* margin-top: 479px; */
+
+  transition-duration: 0.33s;
   background-color: #F0FEF0;
   border-radius: 90px 90px 0 0;
-
-  /* box-shadow: 0px -6px 6px 8px rgba(182,252,182, 0.9); */
-
   cursor: pointer;
 }
 
 .extend {
   height: 480px !important;
   margin-top: 0px !important;
-  transition-duration: 0.5s !important;
+  transition-duration: 0.33s !important;
+  box-shadow: 0px -6px 6px 8px rgba(182,252,182, 0.9);
 }
 
 .blade-tip {
@@ -87,24 +88,39 @@ video {
   margin: auto;
   width: 27px;
   height: 7.5px;
+
+  height: 8px;
+
   background-color: lightGray;
 }
 
 .lens-accent-top {
   position: relative;
   top: -7px;
+
+  top: -8px;
+
   right: 3px;
   width: 33px;
   height: 1.5px;
+
+  height: 2px;
+
   background-color: lightGray;
 }
 
 .lens-accent {
   position: relative;
   top: -6px;
+
+  top: -7px;
+
   right: 2px;
   width: 31px;
   height: 3.75px;
+
+  height: 4px;
+
   background-color: lightGray;
 }
 
