@@ -72,13 +72,15 @@ $(document).ready(function(){
     if(saberStatus === false) {
       playOn();
       playIdle();
-      $("#blade").toggleClass("hidden");
+      $("#blade").toggleClass("extend");
+      $(".blade-tip").toggleClass("hidden");
       saberStatus = true;
     }
     else if (saberStatus === true) {
       playOff();
       stopIdle();
-      $("#blade").toggleClass("hidden");
+      $("#blade").toggleClass("extend");
+      $(".blade-tip").toggleClass("hidden");
       saberStatus = false;
     }
   }
@@ -90,17 +92,21 @@ $(document).ready(function(){
       sound.currentTime = 0;
     });
     var randomNum = Math.floor((Math.random() * 6));
-    bladeSounds[randomNum].play();
+    if(saberStatus === true){
+      bladeSounds[randomNum].play();
+    }
   }
 
   function bladeHitFlash() {
-    $("#blade-flash").toggleClass("hidden");
-    setTimeout(function() {
-      $("#blade-flash").toggleClass("hidden")}, 50);
+    if(saberStatus === true){
+      $("#blade-flash").toggleClass("hidden");
+      setTimeout(function() {
+        $("#blade-flash").toggleClass("hidden")}, 50);
+    }
   }
 
-
 /* ----- Lightsaber & Mute Toggle Function Calls ----- */
+
   $(".saber").on("click", function() {
     saberToggle();
   });
