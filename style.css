@@ -25,10 +25,7 @@ video {
 
 #blade-flash {
   position: absolute;
-  top: 8px;
-
   top: 7px;
-
   right: 0;
   left: 0;
   margin: auto;
@@ -43,17 +40,11 @@ video {
 
 #blade {
   position: relative;
-  top: 25px;
-
   top: 24px;
-
   margin: auto;
   width: 19px;
   height: 0px;
   margin-top: 480px;
-
-  /* margin-top: 479px; */
-
   transition-duration: 0.33s;
   background-color: #F0FEF0;
   border-radius: 90px 90px 0 0;
@@ -87,40 +78,25 @@ video {
   top: 33px;
   margin: auto;
   width: 27px;
-  height: 7.5px;
-
   height: 8px;
-
   background-color: lightGray;
 }
 
 .lens-accent-top {
   position: relative;
-  top: -7px;
-
   top: -8px;
-
   right: 3px;
   width: 33px;
-  height: 1.5px;
-
   height: 2px;
-
   background-color: lightGray;
 }
 
 .lens-accent {
   position: relative;
-  top: -6px;
-
   top: -7px;
-
   right: 2px;
   width: 31px;
-  height: 3.75px;
-
   height: 4px;
-
   background-color: lightGray;
 }
 
