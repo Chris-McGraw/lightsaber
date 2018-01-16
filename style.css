@@ -4,10 +4,6 @@
   cursor: default;
 }
 
-.hidden {
-  display: none !important;
-}
-
 body {
   background-color: black;
 }
@@ -21,6 +17,32 @@ video {
   width: auto;
   height: auto;
   transform: translate(-50%, -50%);
+}
+
+/* -----  Saber Blade ----- */
+
+#blade {
+  position: relative;
+  top: 24px;
+  margin: auto;
+  width: 19px;
+  height: 0px;
+  margin-top: 480px;
+  transition-duration: 0.33s;
+  background-color: #F0FEF0;
+  border-radius: 90px 90px 0 0;
+  cursor: pointer;
+}
+
+.blade-tip {
+  position: absolute;
+  top: -5px;
+  margin: auto;
+  width: 19px;
+  height: 12px;
+  border-radius: 90px 90px 0 0;
+  background-color: #F0FEF0;
+  cursor: pointer;
 }
 
 #blade-flash {
@@ -38,17 +60,8 @@ video {
   z-index: 1;
 }
 
-#blade {
-  position: relative;
-  top: 24px;
-  margin: auto;
-  width: 19px;
-  height: 0px;
-  margin-top: 480px;
-  transition-duration: 0.33s;
-  background-color: #F0FEF0;
-  border-radius: 90px 90px 0 0;
-  cursor: pointer;
+.hidden {
+  display: none !important;
 }
 
 .extend {
@@ -58,16 +71,7 @@ video {
   box-shadow: 0px -6px 6px 8px rgba(182,252,182, 0.9);
 }
 
-.blade-tip {
-  position: absolute;
-  top: -5px;
-  margin: auto;
-  width: 19px;
-  height: 12px;
-  border-radius: 90px 90px 0 0;
-  background-color: #F0FEF0;
-  cursor: pointer;
-}
+/* -----  Saber Hilt ----- */
 
 .saber {
   cursor: pointer;
@@ -223,6 +227,8 @@ video {
   background-color: darkGray;
 }
 
+/* ----- Mute Button and Video/Audio Attribution ----- */
+
 #mute-button {
   position: absolute;
   top: 638px;
@@ -260,7 +266,8 @@ a:hover {
   color: lightGray;
 }
 
-/*----- Media Queries -----*/
+/* ----- Media Queries ----- */
+
 @media screen and (max-width: 1200px) {
   #mute-button {
     left: 94%;

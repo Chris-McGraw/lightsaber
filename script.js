@@ -92,17 +92,21 @@ $(document).ready(function(){
       sound.currentTime = 0;
     });
     var randomNum = Math.floor((Math.random() * 6));
-    bladeSounds[randomNum].play();
+    if(saberStatus === true){
+      bladeSounds[randomNum].play();
+    }
   }
 
   function bladeHitFlash() {
-    $("#blade-flash").toggleClass("hidden");
-    setTimeout(function() {
-      $("#blade-flash").toggleClass("hidden")}, 50);
+    if(saberStatus === true){
+      $("#blade-flash").toggleClass("hidden");
+      setTimeout(function() {
+        $("#blade-flash").toggleClass("hidden")}, 50);
+    }
   }
 
-
 /* ----- Lightsaber & Mute Toggle Function Calls ----- */
+
   $(".saber").on("click", function() {
     saberToggle();
   });
