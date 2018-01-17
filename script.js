@@ -8,14 +8,18 @@ $(document).ready(function(){
   var saberOn = document.getElementById("saberOn");
   var saberIdle = document.getElementById("saberIdle");
   var saberOff = document.getElementById("saberOff");
-
   var saberHit_1 = document.getElementById("saberHit-1");
   var saberHit_2 = document.getElementById("saberHit-2");
   var saberHit_3 = document.getElementById("saberHit-3");
   var saberStrike_1 = document.getElementById("saberStrike-1");
   var saberStrike_2 = document.getElementById("saberStrike-2");
   var saberStrike_3 = document.getElementById("saberStrike-3");
+
   var bladeSounds = [saberHit_1, saberHit_2, saberHit_3, saberStrike_1, saberStrike_2, saberStrike_3];
+  var bladeColors = ["#F0FEF0", "#F6FBF6", "#FEFAF6"];
+  var glowColors = ["0px -6px 6px 8px rgba(182,252,182, 0.9)",
+  "0px -6px 6px 8px rgba(90,216,253, 0.9)",
+  "0px -6px 6px 8px rgba(231,120,93, 0.9)"];
 
 /* ----- Function Declarations ----- */
 
@@ -68,12 +72,21 @@ $(document).ready(function(){
     saberIdle.currentTime = 0;
   }
 
+  function randomBladeColor() {
+    var randomNum = Math.floor((Math.random() * 3));
+    $("#blade").css("background-color", bladeColors[randomNum]);
+    $(".blade-tip").css("background-color", bladeColors[randomNum]);
+    $("#blade-flash").css("background-color", bladeColors[randomNum]);
+    $(".extend").css("box-shadow", glowColors[randomNum]);
+  }
+
   function saberToggle() {
     if(saberStatus === false) {
       playOn();
       playIdle();
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
+      randomBladeColor();
       saberStatus = true;
     }
     else if (saberStatus === true) {
@@ -81,6 +94,7 @@ $(document).ready(function(){
       stopIdle();
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
+      $("#blade").css("box-shadow", "none");
       saberStatus = false;
     }
   }
