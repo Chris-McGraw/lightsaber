@@ -81,6 +81,11 @@ $(document).ready(function(){
       stopIdle();
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
+
+      $("#blade").one("transitionend", function(){
+        $("#blade").css("background-color", "blue");
+      });
+
       saberStatus = false;
     }
   }
