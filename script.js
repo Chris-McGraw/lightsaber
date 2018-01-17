@@ -106,12 +106,13 @@ $(document).ready(function(){
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
 
+      $("#blade").css("box-shadow", "none");
+
    /* $("#blade").one("transitionend", function(){
         $("#blade").css("background-color", "#F6FBFC");
         $(".blade-tip").css("background-color", "#F6FBFC");
-
         $(".extend").css("background-color", "blue");
-        $(".extend").css("box-shadow", "0px -6px 6px 8px rgba(90,216,253, 0.9)");
+        $("#blade").css("box-shadow", "0px -6px 6px 8px rgba(90,216,253, 0.9)");
       }); */
 
       saberStatus = false;
