@@ -68,12 +68,30 @@ $(document).ready(function(){
     saberIdle.currentTime = 0;
   }
 
+  var randomColor = ["#F0FEF0", "blue", "red"];
+
+  function getColor() {
+    var randomNum = Math.floor((Math.random() * 3));
+    $("#blade").css("background-color", randomColor[randomNum]);
+    $(".blade-tip").css("background-color", randomColor[randomNum]);
+    $("#blade-flash").css("background-color", randomColor[randomNum]);
+  }
+
+
   function saberToggle() {
     if(saberStatus === false) {
       playOn();
       playIdle();
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
+
+      getColor();
+      
+      /* $(".extend").one("transitionend", function(){
+        $(".extend").css("background-color", "blue")
+        $(".extend").css("box-shadow", "0px -6px 6px 8px rgba(90,216,253, 0.9)")
+      }); */
+
       saberStatus = true;
     }
     else if (saberStatus === true) {
@@ -82,9 +100,13 @@ $(document).ready(function(){
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
 
-      $("#blade").one("transitionend", function(){
-        $("#blade").css("background-color", "blue");
-      });
+      /* $("#blade").one("transitionend", function(){
+        $("#blade").css("background-color", "#F6FBFC");
+        $(".blade-tip").css("background-color", "#F6FBFC");
+
+        $(".extend").css("background-color", "blue")
+        $(".extend").css("box-shadow", "0px -6px 6px 8px rgba(90,216,253, 0.9)")
+      }); */
 
       saberStatus = false;
     }
