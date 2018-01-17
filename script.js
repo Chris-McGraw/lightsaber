@@ -17,6 +17,11 @@ $(document).ready(function(){
   var saberStrike_3 = document.getElementById("saberStrike-3");
   var bladeSounds = [saberHit_1, saberHit_2, saberHit_3, saberStrike_1, saberStrike_2, saberStrike_3];
 
+  var bladeColors = ["#F0FEF0", "#F6FBF6", "#FEFAF6"];
+  var glowColors = ["0px -6px 6px 8px rgba(182,252,182, 0.9)",
+  "0px -6px 6px 8px rgba(90,216,253, 0.9)",
+  "0px -6px 6px 8px rgba(231,120,93, 0.9)"];
+
 /* ----- Function Declarations ----- */
 
   function muteToggle() {
@@ -68,20 +73,13 @@ $(document).ready(function(){
     saberIdle.currentTime = 0;
   }
 
-  var randomBladeColor = ["#F0FEF0", "#F6FBF6", "#FEFAF6"];
-  var randomGlowColor = ["0px -6px 6px 8px rgba(182,252,182, 0.9)",
-  "0px -6px 6px 8px rgba(90,216,253, 0.9)",
-  "0px -6px 6px 8px rgba(231,120,93, 0.9)"];
-
-  function getColor() {
+  function randomBladeColor() {
     var randomNum = Math.floor((Math.random() * 3));
-    $("#blade").css("background-color", randomBladeColor[randomNum]);
-    $(".blade-tip").css("background-color", randomBladeColor[randomNum]);
-    $("#blade-flash").css("background-color", randomBladeColor[randomNum]);
-
-    $(".extend").css("box-shadow", randomGlowColor[randomNum]);
+    $("#blade").css("background-color", bladeColors[randomNum]);
+    $(".blade-tip").css("background-color", bladeColors[randomNum]);
+    $("#blade-flash").css("background-color", bladeColors[randomNum]);
+    $(".extend").css("box-shadow", glowColors[randomNum]);
   }
-
 
   function saberToggle() {
     if(saberStatus === false) {
@@ -89,32 +87,15 @@ $(document).ready(function(){
       playIdle();
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
-
-      getColor();
-
-      /* $(".extend").one("transitionend", function(){
-        $(".extend").css("background-color", "blue")
-        $(".extend").css("box-shadow", "0px -6px 6px 8px rgba rgba(90,216,253, 0.9)")
-      }); */
-
+      randomBladeColor();
       saberStatus = true;
     }
-
     else if (saberStatus === true) {
       playOff();
       stopIdle();
       $("#blade").toggleClass("extend");
       $(".blade-tip").toggleClass("hidden");
-
       $("#blade").css("box-shadow", "none");
-
-   /* $("#blade").one("transitionend", function(){
-        $("#blade").css("background-color", "#F6FBFC");
-        $(".blade-tip").css("background-color", "#F6FBFC");
-        $(".extend").css("background-color", "blue");
-        $("#blade").css("box-shadow", "0px -6px 6px 8px rgba(90,216,253, 0.9)");
-      }); */
-
       saberStatus = false;
     }
   }
